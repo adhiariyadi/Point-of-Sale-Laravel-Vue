@@ -62,7 +62,6 @@ DB_PASSWORD=
 ```bash
 php artisan key:generate
 php artisan migrate --seed
-php artisan db:seed --class=UsersSeeder
 php artisan jwt:secret
 php artisan config:cache
 ```
