@@ -41,7 +41,7 @@
                                         <input
                                             class="form-control"
                                             type="text"
-                                            required=""
+                                            required
                                             placeholder="Username"
                                             v-model="auth.username"
                                         />
@@ -53,7 +53,7 @@
                                         <input
                                             class="form-control"
                                             type="password"
-                                            required=""
+                                            required
                                             placeholder="Password"
                                             v-model="auth.password"
                                         />

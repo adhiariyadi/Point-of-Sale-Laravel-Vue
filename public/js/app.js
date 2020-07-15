@@ -7091,7 +7091,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       auth: {
-        username: "",
+        email: "",
         password: "",
         has_error: false,
         success: false
@@ -7106,7 +7106,7 @@ __webpack_require__.r(__webpack_exports__);
       var app = this;
       this.$auth.login({
         data: {
-          username: app.auth.username,
+          email: app.auth.email,
           password: app.auth.password
         },
         success: function success() {
@@ -71941,7 +71941,7 @@ var render = function() {
                     _vm.auth.has_error
                       ? _c("div", { staticClass: "alert alert-danger" }, [
                           _vm._v(
-                            "\n                                    Username atau password salah.\n                                "
+                            "\n                                    email atau password salah.\n                                "
                           )
                         ])
                       : _vm.auth.success
@@ -71960,23 +71960,23 @@ var render = function() {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.auth.username,
-                            expression: "auth.username"
+                            value: _vm.auth.email,
+                            expression: "auth.email"
                           }
                         ],
                         staticClass: "form-control",
                         attrs: {
                           type: "text",
                           required: "",
-                          placeholder: "Username"
+                          placeholder: "email"
                         },
-                        domProps: { value: _vm.auth.username },
+                        domProps: { value: _vm.auth.email },
                         on: {
                           input: function($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.$set(_vm.auth, "username", $event.target.value)
+                            _vm.$set(_vm.auth, "email", $event.target.value)
                           }
                         }
                       })
@@ -89593,8 +89593,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\xampp\htdocs\laravel-vue-pos\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\xampp\htdocs\laravel-vue-pos\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! E:\xampp\htdocs\Point-of-Sale\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\xampp\htdocs\Point-of-Sale\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
