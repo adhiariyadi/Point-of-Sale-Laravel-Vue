@@ -7091,7 +7091,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       auth: {
-        email: "",
+        username: "",
         password: "",
         has_error: false,
         success: false
@@ -7106,7 +7106,7 @@ __webpack_require__.r(__webpack_exports__);
       var app = this;
       this.$auth.login({
         data: {
-          email: app.auth.email,
+          username: app.auth.username,
           password: app.auth.password
         },
         success: function success() {
@@ -71941,7 +71941,7 @@ var render = function() {
                     _vm.auth.has_error
                       ? _c("div", { staticClass: "alert alert-danger" }, [
                           _vm._v(
-                            "\n                                    email atau password salah.\n                                "
+                            "\n                                    Username atau password salah.\n                                "
                           )
                         ])
                       : _vm.auth.success
@@ -71960,23 +71960,23 @@ var render = function() {
                           {
                             name: "model",
                             rawName: "v-model",
-                            value: _vm.auth.email,
-                            expression: "auth.email"
+                            value: _vm.auth.username,
+                            expression: "auth.username"
                           }
                         ],
                         staticClass: "form-control",
                         attrs: {
                           type: "text",
                           required: "",
-                          placeholder: "email"
+                          placeholder: "Username"
                         },
-                        domProps: { value: _vm.auth.email },
+                        domProps: { value: _vm.auth.username },
                         on: {
                           input: function($event) {
                             if ($event.target.composing) {
                               return
                             }
-                            _vm.$set(_vm.auth, "email", $event.target.value)
+                            _vm.$set(_vm.auth, "username", $event.target.value)
                           }
                         }
                       })
